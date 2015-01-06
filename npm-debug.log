@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/anverma/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/anverma/.npm/censorify_v1/0.0.3/package.tgz', '.' ]
+11 verbose tarball /Users/anverma/.npm/censorify_v1/0.0.3/package.tgz
+12 verbose folder .
+13 info prepublish censorify_v1@0.0.3
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/anverma/.npm/1f1177db-tar.lock
+16 silly lockFile 57b8a6b3-m-censorify-v1-0-0-3-package-tgz tar:///Users/anverma/.npm/censorify_v1/0.0.3/package.tgz
+17 verbose lock tar:///Users/anverma/.npm/censorify_v1/0.0.3/package.tgz /Users/anverma/.npm/57b8a6b3-m-censorify-v1-0-0-3-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 57b8a6b3-m-censorify-v1-0-0-3-package-tgz tar:///Users/anverma/.npm/censorify_v1/0.0.3/package.tgz
+21 silly lockFile 57b8a6b3-m-censorify-v1-0-0-3-package-tgz tar:///Users/anverma/.npm/censorify_v1/0.0.3/package.tgz
+22 silly lockFile 9ce3a639-a-npm-censorify-v1-0-0-3-package /Users/anverma/.npm/censorify_v1/0.0.3/package
+23 verbose lock /Users/anverma/.npm/censorify_v1/0.0.3/package /Users/anverma/.npm/9ce3a639-a-npm-censorify-v1-0-0-3-package.lock
+24 silly lockFile 9ce3a639-a-npm-censorify-v1-0-0-3-package /Users/anverma/.npm/censorify_v1/0.0.3/package
+25 silly lockFile 9ce3a639-a-npm-censorify-v1-0-0-3-package /Users/anverma/.npm/censorify_v1/0.0.3/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { author: { name: 'Anupriya Verma' },
+28 silly publish   name: 'censorify_v1',
+28 silly publish   version: '0.0.3',
+28 silly publish   description: 'Censors words out of text',
+28 silly publish   main: 'censortext',
+28 silly publish   repository: { type: 'git', url: 'https://github.com/anuver/node-proj' },
+28 silly publish   keywords: [ 'censor', 'words' ],
+28 silly publish   dependencies: {},
+28 silly publish   engines: { node: '*' },
+28 silly publish   readme: 'This is a sample ReadMe file.\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   bugs: { url: 'https://github.com/anuver/node-proj/issues' },
+28 silly publish   homepage: 'https://github.com/anuver/node-proj',
+28 silly publish   _id: 'censorify_v1@0.0.3',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '406b9c7534eb682988b4e25bdfaf47bed84c9624',
+28 silly publish   _from: '.' }
+29 verbose request where is /censorify_v1
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id cd00deb61f3ecbf8
+32 verbose url raw /censorify_v1
+33 verbose url resolving [ 'https://registry.npmjs.org/', './censorify_v1' ]
+34 verbose url resolved https://registry.npmjs.org/censorify_v1
+35 verbose request where is https://registry.npmjs.org/censorify_v1
+36 info trying registry request attempt 1 at 17:49:27
+37 http PUT https://registry.npmjs.org/censorify_v1
+38 http 403 https://registry.npmjs.org/censorify_v1
+39 verbose headers { date: 'Mon, 05 Jan 2015 22:49:28 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '1964',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-iad2124-IAD',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1420498168.184139,VS0,VE330',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 0.0.3
+41 error old={"author":{"name":"Anupriya Verma"},"name":"censorify_v1","version":"0.0.3","description":"Censors words out of text","main":"censortext","repository":{"type":"git","url":"https://github.com/anuver/node-proj"},"keywords":["censor","words"],"dependencies":{},"engines":{"node":"*"},"bugs":{"url":"https://github.com/anuver/node-proj/issues"},"homepage":"https://github.com/anuver/node-proj","_id":"censorify_v1@0.0.3","scripts":{},"_shasum":"55b83df3af38e981a37b5033cd68ad8dbe660510","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"anuverma","email":"anupriya.verma@gmail.com"},"maintainers":[{"name":"anuverma","email":"anupriya.verma@gmail.com"}],"dist":{"shasum":"55b83df3af38e981a37b5033cd68ad8dbe660510","tarball":"http://registry.npmjs.org/censorify_v1/-/censorify_v1-0.0.3.tgz"}}
+41 error new={"author":{"name":"Anupriya Verma"},"name":"censorify_v1","version":"0.0.3","description":"Censors words out of text","main":"censortext","repository":{"type":"git","url":"https://github.com/anuver/node-proj"},"keywords":["censor","words"],"dependencies":{},"engines":{"node":"*"},"readme":"This is a sample ReadMe file.\u000a","readmeFilename":"README.md","bugs":{"url":"https://github.com/anuver/node-proj/issues"},"homepage":"https://github.com/anuver/node-proj","_id":"censorify_v1@0.0.3","scripts":{},"_shasum":"406b9c7534eb682988b4e25bdfaf47bed84c9624","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"anuverma","email":"anupriya.verma@gmail.com"},"maintainers":[{"name":"anuverma","email":"anupriya.verma@gmail.com"}],"dist":{"shasum":"406b9c7534eb682988b4e25bdfaf47bed84c9624","tarball":"http://registry.npmjs.org/censorify_v1/-/censorify_v1-0.0.3.tgz"}}: censorify_v1
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 13.4.0
+44 error command "node" "/usr/local/bin/npm" "publish"
+45 error cwd /Users/anverma/IdeaProjects/NodeJS/Pilot/censorify
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]

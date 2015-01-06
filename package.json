@@ -1,0 +1,19 @@
+{
+   "author": "Anupriya Verma",
+   "name": "censorify_v1",
+   "version": "0.0.3",
+   "description": "Censors words out of text",
+   "main": "censortext",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/anuver/node-proj"
+   },
+   "keywords": [
+     "censor",
+     "words"
+  ],
+   "dependencies": {},
+   "engines": {
+       "node": "*"
+   }
+}
